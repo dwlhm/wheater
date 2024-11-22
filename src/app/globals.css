@@ -18,4 +18,121 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.current-wheater-card {
+  @apply m-2 p-2 flex items-center justify-center flex-col gap-5;
+}
+
+.current-wheater-card-icon-wrapper {
+  @apply flex flex-col justify-center items-center;
+}
+
+.current-wheater-card-code {
+  @apply font-semibold text-blue-500;
+}
+
+.current-wheater-card-body {
+  @apply flex gap-5 text-center;
+}
+
+.current-wheater-card-body .title {
+  @apply text-sm;
+}
+
+.location-wrapper {
+  @apply text-center m-2 py-2 px-3 flex bg-blue-300/80 rounded items-center sticky top-2 backdrop-blur z-10;
+}
+
+.location-wrapper-body {
+  @apply flex-grow;
+}
+
+.location-wrapper-action {
+  @apply text-xs py-1 px-2 text-black;
+}
+
+.location-wrapper-popup {
+  @apply fixed inset-0 backdrop-blur z-20 text-black;
+}
+
+.location-wrapper-popup-container {
+  @apply bg-white m-10 p-2 rounded;
+}
+
+.location-wrapper-popup-container-header {
+  @apply flex justify-between items-center;
+}
+
+.location-wrapper-popup-container-header .btn {
+  @apply transition bg-red-300 hover:bg-red-300/80;
+}
+
+.location-wrapper-popup-container input {
+  @apply px-3 py-2 bg-gray-300 w-full my-4 rounded text-gray-800;
+}
+
+.location-wrapper-popup-container .loading {
+  @apply text-center;
+}
+
+.location-wrapper-popup-container .result {
+  @apply mb-3 overflow-auto h-[60vh] py-1;
+}
+
+.location-wrapper-popup-container .result .geolocation-city-name span {
+  @apply text-gray-600 italic text-sm;
+}
+
+.wrapper {
+  @apply transition bg-gray-200 mb-2 rounded py-2 px-3 hover:bg-gray-300;
+}
+
+.location-wrapper-popup-container .result .geolocation-city-coords {
+  @apply text-sm;
+}
+
+.error-text-red-style {
+  @apply bg-transparent border-0 p-0 text-red-900;
+}
+
+.forecast-wheater-card {
+  @apply mt-5 my-2 mx-5 sm:mx-auto p-2 bg-white rounded max-w-2xl text-black;
+}
+
+.forecast-wheater-card .container {
+  @apply flex flex-row flex-nowrap gap-2 overflow-auto
+}
+
+.forecast-wheater-card h3 {
+  @apply m-2 font-semibold text-center;
+}
+
+.forecast-wheater-card .wrapper {
+  @apply flex items-center justify-center flex-col w-64;
+}
+
+.forecast-wheater-card .w-code {
+  @apply my-2 text-center
+}
+
+.forecast-wheater-card .body {
+  @apply flex justify-between gap-2 w-full
+}
+
+.forecast-wheater-card .body p {
+  @apply flex flex-col p-2
+}
+
+.forecast-wheater-card .body .sub-title {
+  @apply text-xs
+}
+
+.responsive-sm {
+  @apply max-w-sm mx-auto
+}
+
+.responsive-xl {
+  @apply max-w-xl sm:mx-auto mx-5
 }

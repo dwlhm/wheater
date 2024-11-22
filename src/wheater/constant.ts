@@ -1,0 +1,33 @@
+import { ReactNode } from "react";
+import Image from "next/image";
+
+export const WMO: { [key: number]: { text: string; icon: string } } = {
+  0: {text: "Clear sky", icon: "/icons/clear_sky.png"},
+  1: {text: "Mainly clear", icon: "/icons/mainly_clear.png"},
+  2: {text: "Partly cloudy", icon: "/icons/partly_cloudy.png"},
+  3: {text: "Overcast", icon: "/icons/fog.png"},
+  45: {text: "Fog", icon: "/icons/fog.png"},
+  48: {text: "Depositing rime fog", icon: "/icons/fog.png"},
+  51: {text: "Drizzle: Light", icon: "/icons/rainy.png"},
+  53: {text: "Drizzle: Moderate", icon: "/icons/rainy.png"},
+  55: {text: "Drizzle: Dense", icon: "/icons/rainy.png"},
+  56: {text: "Freezing Drizzle: Light", icon: "/icons/Freezing Drizzle.png"},
+  57: {text: "Freezing Drizzle: Dense", icon: "/icons/Freezing Drizzle.png"},
+  61: {text: "Rain: Slight", icon: "/icons/rainy.png"},
+  63: {text: "Rain: Moderate", icon: "/icons/rainy.png"},
+  65: {text: "Rain: Heavy", icon: "/icons/rainy.png"},
+  66: {text: "Freezing Rain: Light", icon: "/icons/rainy.png"},
+  67: {text: "Freezing Rain: Heavy", icon: "/icons/rainy.png"},
+  71: {text: "Snow fall: Slight", icon: "/icons/snowy.png"},
+  73: {text: "Snow fall: Moderate", icon: "/icons/snowy.png"},
+  75: {text: "Snow fall: Heavy", icon: "/icons/snowy.png"},
+  77: {text: "Snow grains", icon: "/icons/snowy.png"},
+  80: {text: "Rain showers: Slight", icon: "/icons/rain-showers.png"},
+  81: {text: "Rain showers: Moderate", icon: "/icons/rain-showers.png"},
+  82: {text: "Rain showers: Violent", icon: "/icons/rain-showers.png"},
+  85: {text: "Snow showers: Slight", icon: "/icons/snow-showers.png"},
+  86: {text: "Snow showers: Heavy", icon: "/icons/snow-showers.png"},
+  95: {text: "Thunderstorm: Slight or moderate", icon: "/icons/thunder.png"},
+  96: {text: "Thunderstorm with slight and heavy hail", icon: "/icons/thunder.png"},
+  99: {text: "Thunderstorm with slight and heavy hail", icon: "/icons/thunder.png"},
+};
